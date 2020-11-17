@@ -55,6 +55,10 @@ a {
   color: inherit;
 }
 
+p {
+  color: hsl(208, 11%, 55%);
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -227,4 +231,81 @@ header {
 
 .copy a {
   text-decoration: underline hsl(322, 100%, 66%) solid;
+}
+
+@media only screen and (max-width: 910px) {
+  address {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  footer {
+    display: block;
+  }
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin: 1rem 0rem;
+  }
+
+  .banner {
+    text-align: center;
+    display: block;
+  }
+
+  .banner-text {
+    margin: auto;
+  }
+
+  .qualities-section {
+    width: 110%;
+    margin-left: -5%;
+  }
+
+  .quality-card {
+    padding: 2rem;
+  }
+
+  .quality-card:nth-child(even),
+  .quality-card {
+    flex-direction: column-reverse;
+  }
+
+  .quality-card:nth-child(even) .card-text,
+  .quality-card:nth-child(odd) .card-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu-footer {
+    display: block;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  header {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  header img {
+    width: 30vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .banner-img {
+    margin: 0;
+  }
+
+  .call-to-action {
+    width: 100%;
+  }
 }
