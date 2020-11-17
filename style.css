@@ -7,9 +7,9 @@
 html {
   font-size: 62.5%;
 }
-
 body {
-  padding: 5rem;
+  padding: 5rem 5rem 0;
+  font-size: 1.8rem;
 }
 
 body,
@@ -25,6 +25,15 @@ body,
   border: none;
   padding: 0.7rem 2.5rem;
   border-radius: 30px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.btn-white:hover,
+.btn-pink:hover,
+.btn-white:focus,
+.btn-pink:focus {
+  opacity: 75%;
 }
 
 h1,
@@ -34,6 +43,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
 }
 
 h1 {
@@ -45,8 +55,45 @@ a {
   color: inherit;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  margin: 1rem 6rem;
+}
+
+address {
+  width: 32%;
+  margin-left: 3rem;
+}
+
+address p {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+address p img {
+  margin-right: 2rem;
+}
+
 footer {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
+  background-color: hsl(192, 100%, 9%);
+  margin: 0 -5rem;
+  padding: 10rem 3rem 2rem;
+}
+
+footer address img {
+  filter: brightness(0) invert(1);
 }
 
 img {
@@ -61,12 +108,14 @@ img {
 .btn-pink {
   background-color: hsl(322, 100%, 66%);
   color: white;
+  padding: 1.5rem 4rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5rem 5rem 0 5rem;
 }
 
 .wrapper1 {
@@ -74,5 +123,108 @@ header {
   background-color: hsl(193, 100%, 96%);
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: -5rem;
+  margin: -5rem -5rem 0;
+  padding-bottom: 2rem;
+}
+
+.banner {
+  margin: 2rem 0;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  margin-left: 5rem;
+}
+
+.banner-text {
+  max-width: 47.2rem;
+}
+
+.quality-card,
+.call-to-action {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px #eee;
+}
+
+.quality-card {
+  display: flex;
+  align-items: center;
+
+  padding: 5rem;
+  margin: 2.5rem 0;
+}
+
+.quality-card:first-child {
+  margin-top: 10rem;
+}
+
+.quality-card:last-child {
+  margin-bottom: 10rem;
+}
+
+.quality-card:nth-child(odd) .card-text {
+  margin-right: 27rem;
+}
+
+.quality-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.quality-card:nth-child(even) .card-text {
+  margin-left: 27rem;
+}
+
+.call-to-action {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto -6rem;
+  padding: 2rem 4rem;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 0px 10px 2px rgba(34, 34, 34, 0.13);
+}
+
+.logo-footer {
+  display: block;
+}
+
+.menu-footer {
+  display: flex;
+  align-items: center;
+  width: 51%;
+}
+
+.menu-footer a:hover {
+  text-decoration: underline white solid;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  margin: 1rem;
+}
+
+.social-icons a:hover,
+.copy a:hover,
+.social-icons a:focus,
+.copy a:focus {
+  color: hsl(322, 100%, 66%);
+}
+
+.copy {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.copy a {
+  text-decoration: underline hsl(322, 100%, 66%) solid;
 }
